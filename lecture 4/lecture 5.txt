@@ -1,0 +1,6 @@
+Whenever we use the require method it wraps all the code in a function which is (iife) immediately invoked when it its required and then gives that code to the V8 engine. It is used as it immediately invokes a code and keeps the vars and function inside a code private.
+How Require works:-1. Resolves the file -> Checks if the file is a node module or a local file or a .json file.
+2. Loads the file -> loads the contents of the file according to the file type.
+3. Wraps the code into an IIFE.
+4. Module.exports happen.
+5. Caching -> Say we happen to require a file xyz.js in multiple places so whenever a file is runned requiring xyz.js it will do all the above steps once and load it into cache memory and then whenever a diff. file requires it , it just loads it up from cache for increased optimization.
