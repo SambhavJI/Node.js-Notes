@@ -1,0 +1,4 @@
+JS is a synchronous single threaded language. synchronous means that the code is executed line by line which takes time and is not best when our code handles 100's of request so with node we can use async javascript.
+Async means the code is getting executed according to the time. Lets say we have a function to get data from a site which takes 10 secs to execute now instead of making JS wait for the function to complete its task we can use async features of node to take the task to the background and proceed with the further code.
+To make JS async in browsers we have Web API and for node.js it is done via libuv which is a node.js library which interacts with OS to make JS async.
+Libuv has all methods like event loops etc.
