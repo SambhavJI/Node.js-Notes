@@ -1,0 +1,4 @@
+Now in our file async.js when we run the code we will see that first the JS engine runs the code which is sync in nature like the log statements and he multiply function and the async parts like api calls are transfered to libuv after the execution of all the sync statements the JS engine sits idle and libuv comes into play.
+Libuv runs the file which takes the shortest time first in this case that is the fs file then it goes to the api call which take more time then the fs function after that it runs the set timeout function which takes the longest time of them all and thats how async js runs on node.
+Function in modules of node.js are async by default but the function which contain sync in the end of their name are synchronous function and have which blocks the main thread making code wait and not executing the next functions.
+Whenever a set timeouut is set to 0 it will still be executed after all the synchronous code has been executed in the js engine 
