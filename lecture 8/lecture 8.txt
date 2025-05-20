@@ -1,0 +1,6 @@
+In this lecture we learnt how V8 engine works so first when we give it the code it breaks it down into small packages of code or tokens which is called lexical analysis next in the second step the tokens are converted into syntax analysis and also converted to abstract syntax tree(astexplorer.com) which is also called parsing.
+JS in niether interprted nor compiled it uses JIT(just in time) compilation which uses the best of both interpreter and compiler.
+The next step of the V8 engine is when the AST is read by ignition interpreter(googles interpreter) and converted into byte code and then finally exected.
+The name of the JS compiler is turbo fan. It converts the hot code (the code which can be optimize or reused) into a maschine code and then executed. 
+There is also a method of deoptimization where if there is some change in the optimized or repeated code the compiler deoptimizes it and then the interpreter runs it again.
+ 
