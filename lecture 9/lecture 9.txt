@@ -1,0 +1,4 @@
+In this lecture we studied about eventloop of libuv in node.js. he event loop is the engine behind Node.js's asynchronous behavior, allowing it to handle I/O-heavy tasks efficiently on a single thread by queueing and executing callbacks in a non-blocking way.
+The first phase of the event loop is called as timer phase in this the event loop handles all the settimeout requests, the next phase is poll phase I/O operations API calls are executed , in the next phase called check phase where setImmediate calls are handled followed by the last phase called close phase.
+There is also another cycle which happens before every phase of the event loop where the event loop checks for promise callbacks and process.nexttick before each cycle.
+Event loop waits at the poll phase if the callstack and the callback queue is empty until there is a request mad to the poll phase.
