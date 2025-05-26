@@ -1,0 +1,4 @@
+A database is a organized collection of data.There are many types of databases but the most common are SQL and noSQL.
+Relational Databases(SQL):-
+Consists of mySQL and postgreSQL.SQL stands for structured query language which is used to interact and manage databases.RDBMS stores data in form of tables consisting of rows and column.it stores structured data.It has a a ixed schema and is difficult to horizontal scale.It is easy to scale vertically.
+noSQL Databases:-There are many types of databases but mainly we will use mongoDB which is a document database.In noSQL the data is stored in form of a JSON which is known as document.It is unsructured data.It has flexible schema(schema means the contents of the document).It is easy to scale horizontally and vertically.
