@@ -1,0 +1,4 @@
+Monolith vs microservice :-
+Monolith refers to a type of project where the frontend backend and all other diffrent aspects of the project are in a single repository.
+In microservice the project is split into various parts and diffrent teams handle diffrent aspect of the code in a large company.
+We will built the dev tinder in a microservice arch. with a frontend and a backend. Forntend and backend will communicate via apis.
