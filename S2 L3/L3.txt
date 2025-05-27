@@ -1,0 +1,5 @@
+Here I will write the explaination of all the code and function written in the Dev tinder.
+In this lecture we will make a server using express so first we will install express and then require it to a constant. After that we will make another constant called app and pass the express() function to it this function is used to intialize an express app.
+After we created an express app we will make it listen to our request by the function app.listen and give it a port value inside that function, we can also send a function inside the app.listen to console log anything.
+Now to display something on the webpage we use a method called app.use which takes a function as an argument now this function also takes two arguments a request and a response.Now iside this function we can use the method res.send to send any thing to our page.This function is also called request handler.
+Now the app.use also takes an argument of route so we can determine which route does what by just adding a route before function in the app.use.
