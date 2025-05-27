@@ -1,0 +1,2 @@
+Here we will use mongoDB as our data base where we will have multiple states like accepted rejected etc.
+For APIs we will use RESTapi where there are multiple methods like get request post request put , patch and delete api these are all known as http methods.
