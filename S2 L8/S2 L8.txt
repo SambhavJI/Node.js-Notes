@@ -1,0 +1,11 @@
+In this video we see how can we keep our database:-
+Default - Gives a default value to a field of out schema like a default url for a photo
+Required - when you set this to a field mongoose will not allow any data without that field into the data base.
+timestamp - Will allow you to note the time of insertion of a document in the database.
+Trim - will trim spaces in front of any document.
+min/max - set minimum of maximum value for the data to be in a database.
+Validate - Will check if the data has exact value as of that given in the schema if yes then only fill the data in the database.
+Validations on express server:-
+We can also do checks in our DB via the express server and can also use a nodeJS library of validator.
+Lets say in an app you have to allow user only some specific updates you can do this by api validation in the express server in the patch req, to do this we will fisrt make an array of items that we do not want to get updated after that we will create a constant and then take all the keys of the data passed throught the request into an object(keys are firstName, lastName) after that we will take an if statement and check if the the contents of the data sent via the req match our approved contents and then only update.
+To check if the user has entered a correct email id we use validate function which takes the value of the email ID this is written in our schema and is a DB level validation ,inside this validatefunction we use an if statement to check the emailID suing the isemail function.
