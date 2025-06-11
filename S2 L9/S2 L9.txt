@@ -1,0 +1,5 @@
+Whenever we signup a user we should not use the req.body as it can be bad for our code instead we should first validate the data before pushing it into the DB to to this we can use the validator library.
+We can do any type of validations inside this before posting our data to DB like email check and all the other checks we did in out previous codes.
+We should also encrypt our password for which we will use the library bcrypt and the function bcrypt.hash which will encrypt our password it take two arguments password and a salt number which means the number of times the password is being encrypted the higher the more safer.
+We will also built an login API in which we will first take the email and password and use the findOne function of mongoose to check if the user is present or not if yes then we will use another bcrypt function called bcrypt.compare which compares the password given by the body and the password in the DB and match it it is a promise so use await.
+Do not give specific err message like Email dosent exist to enhance security.
